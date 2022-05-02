@@ -17,6 +17,19 @@
         stroke: none;
         stroke-width: 40px;
       }
+
+      .node text {
+        display: none;
+        font: 16px sans-serif;
+      }
+
+      .node:hover rect {
+        fill: #000;
+      }
+
+      .node:hover text {
+        display: inline;
+      }
     </style>
   </head>
   <body>
@@ -144,7 +157,7 @@
         // .attr("r", d=> d.id === 1 ? 24 : 14)
         //.attr("r", d=> 14)
         .attr("width", 40)
-        .attr("height", 10)
+        .attr("height", 20)
         .style("fill", function (d) {
           /*if (d.id === 1) {
             return "url(#vit-icon)";
